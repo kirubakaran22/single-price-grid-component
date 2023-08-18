@@ -1,0 +1,111 @@
+@font-face {
+    font-family: karla;
+    src: url(/Price-grid/Font/Karla-VariableFont_wght.ttf);
+}
+*{
+    font-family: karla;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin: 0;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 650px;
+    border-radius: 8px;
+    margin-top: 15vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+}
+.content1{
+    grid-column: span 2;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 8px 8px 0px 0px;
+}
+.content2{
+    background-color: hsl(179, 62%, 43%);
+    padding: 30px 40px;
+    color: white;
+    border-radius: 0px 0px 0px 8px;
+}
+.content3{
+    background-color: hsl(218, 22%, 67%);
+    padding: 30px 40px;
+    color: white;
+    border-radius: 0px 0px 8px 0px;
+}
+#c1{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.3em;
+}
+#c1-trail{
+    color: hsl(71, 73%, 54%);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#c1-main{
+    color: hsl(218, 22%, 67%);
+    font-size: .9em;
+    line-height: 1.5em;
+}
+#c2-head,#c3-head{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px 0px;
+}
+#c2-price{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0px 10px;
+}
+.small-text{
+    font-size: .5em;
+    font-weight: 100;
+    color: rgb(225, 221, 221);
+}
+#c2-access{
+    font-size: .9em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+button{
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3); 
+}
+ul{
+    margin-top: 20px;
+    list-style-type:none;
+    padding: 0px;
+    font-weight: 300;
+    font-size: .84em;
+    line-height: 1.4em;
+}
+@media screen and (max-width:450px) {
+    .content{
+        grid-template-columns: 1fr;
+        margin-top: auto;
+    }
+    .content1{
+        grid-column: span 1;
+    }
+    .content2{
+        border-radius: 0px;
+    }
+    .content3{
+        border-radius: 0px 0px 8px 8px;
+    }
+}
